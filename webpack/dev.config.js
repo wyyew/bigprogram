@@ -43,14 +43,16 @@ module.exports = {
         'style-loader',
         'css-loader',
         {
-          loader:'postcss-loader',
+            loader: 'postcss-loader',
             options: {
-              plugins: [
-                require('postcss-loader'),
-                require('autoprefixer')
-              ]
+              plugins: function () {
+                return [
+                  require('precss'),
+                  require('autoprefixer')
+                ];
+              }
             }
-        },
+          },
         'sass-loader'
         ]
       },
@@ -77,6 +79,10 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test:/\.(ttf|eot|svg)(\?[\s\S]+)$/,
+        use:"file-loader"
       }
     ]
   }

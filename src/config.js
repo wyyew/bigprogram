@@ -2,16 +2,16 @@ module.exports = {
   host: process.env.HOST || 'localhost',
   port: process.env.PORT || (process.env.NODE_ENV === 'production' ? 8080 : 3000),
   apiHost: process.env.APIHOST || 'localhost',
-  apiPort: process.env.PAIPORT || 3030,
+  apiPort: process.env.APIPORT || 3030,
   app: {
-    title: 'React Redux Book',
-    description: 'React Redux Book Example',
+    title: '经销商门户',
+    description: 'React Redux 经销商门户',
     head: {
-      titleTemplate: 'React Redux Book: %s',
+      titleTemplate: '经销商门户: %s',
       meta: [
         {
           name: 'description',
-          content: 'React Redux Book Example'
+          content: 'React Redux 经销商门户'
         },
         { charset: 'utf-8' }
       ]

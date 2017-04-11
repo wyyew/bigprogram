@@ -2,7 +2,7 @@ var WebpackIsomorphicToolsPlugin = require('webpack-isomorphic-tools/plugin');
 
 var config = {
   assets: {
-    images: {extensions: ['png', 'jpg']},
+    images: {extensions: ['jpg']},
     style_modules: {
       extensions: ['css', 'scss'],
       filter: function(module, regex, options, log) {

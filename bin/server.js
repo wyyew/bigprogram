@@ -17,8 +17,8 @@ if(process.env.NODE_ENV == 'production') {
   require('babel-register');
   global.webpackIsomorphicTools = new WebpackIsomorphicTools(
     require('../webpack/webpack-isomorphic-tools')
-  ).development()
-  .server(rootDir, fucntion() {
+  )//.development(process.env.NODE_ENV === 'development')
+  .server(rootDir, function() {
     require('../src/server');
   });
 }

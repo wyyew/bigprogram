@@ -33,7 +33,7 @@ app.use((req, res) => {
   }
 
   const store = configureStore();
-  cost routes = getRoutes(store);
+  const routes = getRoutes(store);
 
   function hydrateOnClient() {
     res.send('<!doctype html>\n' +

@@ -1,6 +1,7 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import ReactDom from 'react-dom/server';
 import serialize from 'serialize-javascript';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 function Html(props) {
